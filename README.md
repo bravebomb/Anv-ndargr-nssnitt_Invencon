@@ -1,13 +1,13 @@
 WELCOME TO THE ROBOTS!
 
 Projektet fungerar genom att PUBLISHER är publiceraren som kan sätta maximala hastigheter till robotarna.
-Om du startar Publisher.HTML och sedan öppnar av av robotarnas HTML fil så borde publiceraren känna av den.
+Om du startar Publisher.HTML och sedan öppnar av av robotarnas HTML-fil så borde publiceraren känna av den.
 
 Robot-300 är uppdelad i två webbläsare som kräver att båda är uppe för att den ska fungera korrekt.
 Robot-569 har endast en.
 
 TELEREMOTE fungerar liknande till PUBLISHER vilket innebär att den känner när en av de andra robotarna är uppe och igång.
-Teleremote ska kunna välja en av robotarna och visa informationen om den valda roboten på webbläsaren.
+Teleremote ska kunna välja en av robotarna och visa informationen om den valda roboten på webbläsarna.
 
 
 -------------VIKTIGT-------------
