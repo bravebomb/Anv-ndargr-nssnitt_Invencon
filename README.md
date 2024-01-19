@@ -11,6 +11,7 @@ Teleremote ska kunna välja en av robotarna och visa informationen om den valda 
 
 
 -------------VIKTIGT-------------
+
 Just nu går robotarna över en MQTT-broker över webben. Detta indikeras i varje javascript kod med funktionen:
 
  " const host = "ws://broker.emqx.io:8083/mqtt" "
@@ -25,6 +26,7 @@ Detta kan göras genom att antigen ssh in på brokern eller koppla upp den till 
 Login och Lösen är detsamma : broker
 
 -------------FÖR ROBOTARNA-------------
+
 Funktionen whatsTheSpeed() är en temporär funktion som ska bytas ut framöver. Denna funktion hittar på ett slumpmässigt värde som bilen kör 
 under denns maximalahastighet och skickar det till PUBLISHER och TELEREMOTE, för att visa att de är kopplade till nätverket. Ni ska istället
 för att använda denna funktion beräkna hur fort roboten kör och skicka det direkt till PUBLISHER.
@@ -38,6 +40,7 @@ vilken robot som ska ta emot informationen. Robot-569 has 569 som sitt unika id 
 Är funktionen som körs när robotarna tar emot sitt meddelande.
 
 -------------FÖR PUBLISHER-------------
+
 Publisher tar emot meddelanden från ämnet [ andel1337 ].
 Publisher har en tom lista som fylls på när den får ett meddelande från en robot tars emot och sätter in all information om roboten som ett JSON-objekt i listan.
 Om Publisher tar emot ett meddelande från en robot som redan är med i listan så uppdateras informationen om roboten istället.
@@ -45,6 +48,7 @@ Om Publisher tar emot ett meddelande från en robot som redan är med i listan s
 Trycks lampan så ändras det till rött och skickar ett failure meddelande till alla uppkopplade system som stänger av dem och diverse om man trycker på lampan igen.
 
 -------------FÖR TELEREMOTE-------------
+
 Teleremote tar emot meddelanden från ämnet [ andel420 ].
 
 
