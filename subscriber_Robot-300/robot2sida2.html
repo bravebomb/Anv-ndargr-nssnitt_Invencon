@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>MQTT Over WebSockets</title>
+    <link rel="stylesheet" href="robot2.css" />
+    <script src="https://unpkg.com/mqtt/dist/mqtt.min.js"></script>
+  </head>
+  <body>
+    <h1>Robot-300</h1>
+    <ul class="wrapper">
+      <li class="form-row">
+         <div class="switch-container standby">
+           <button id="OFF" class="active" >OFF</button>
+           <button id="ON">ON</button>
+         </div>
+         <div class="dotplace">
+          <h2>System Failure</h2>
+          <span class="dot disabled"></span>
+         </div>
+      </li>
+    </ul>
+    <script src="robot2.js"></script>
+  </body>
+</html>

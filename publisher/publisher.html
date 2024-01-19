@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>MQTT Over WebSockets Publisher</title>
+    <link rel="stylesheet" href="publisher.css" />
+    <script src="https://unpkg.com/mqtt/dist/mqtt.min.js"></script>
+  </head>
+  <body>
+    <div class="background-image"></div>
+    <h1>Publisher</h1>
+    <ul class="wrapper">
+      <li class="form-row">
+        <label id="label">ID</label>
+        <label id="label">TYPE</label>
+        <label id="label">STATUS</label>
+        <label id="label">SPEED</label>
+      </li>
+      <ul class="robotWrapper">
+    </ul>
+      <li class="form-row-bottom">
+        <input class="speedText" id="chosenBot" readonly></input>
+        <input id="message" class="speedText"></input>
+        <button type="button" id="button" class="button-27">Publish</button>
+      </li>
+      <li>
+        <div>
+          <h2>System Failure</h2>
+          <span class="dot disabled"></span>
+        </div>
+      </li>
+    </ul>
+    <div class="carplace">
+      <img src="cargowroom.gif" class="car">
+    </div>
+    <script src="publisher.js"></script>
+  </body>
+</html>

@@ -1,0 +1,162 @@
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+body{
+  background-image: url("subscriberBackground.png");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  width: 100%;
+  max-width: 1920px; /* YOUR BG MAX SIZE */
+  background-size: 100%;
+  color: white; 
+}
+/****** Styling for the Layout ***********/
+.wrapper {
+  list-style-type: none;
+  border-radius: 5px;
+  width: 50%;
+  margin: 0 auto;
+  padding-top: 10%;
+}
+
+h1 {
+  text-shadow:#2196f3 1px 0 10px;
+  margin-left: 46%;
+  margin-top: 2%;
+}
+
+h2 {
+  text-shadow:#2196f3 1px 0 10px;
+}
+
+.form-row {
+  display: flex;
+  justify-content: flex-end;
+  padding: 0.5em;
+}
+.form-row > label {
+  padding: 1em;
+  flex: 1;
+  font-size: 1.2em;
+  font-weight: bold;
+  text-shadow:#2196f3 1px 0 10px;
+}
+
+.form-row > input,
+.form-row > textarea {
+  flex: 2;
+}
+.form-row > input,
+.form-row > textarea {
+  padding: 0.5em;
+  resize: vertical;
+  margin: 10px 0;
+  box-shadow: 0 0 15px 4px #32cee8;
+  border-radius: 10px;
+  font-size: 1.2em;
+}
+
+.form-row > button {
+  margin-left: 50%;
+  padding: 200px;
+}
+
+.form-row > textarea {
+  font-size: 1.5em;
+  background-color: whitesmoke;
+  text-align: center;
+  font-weight: bold;
+  color: black;
+}
+
+.btn-container {
+  flex: 3;
+  column-gap: 10px;
+  display: flex;
+}
+
+.btn-container > button {
+  padding-left: 10%;
+  margin: 10px 0;
+  box-shadow: 0 0 15px 4px #32cee8;
+  border-radius: 10px;
+  font-size: 1.2em;
+  margin: 0 auto;
+}
+
+.change {
+  background-color: green;
+}
+
+.switch-container {
+  position: relative;
+  display: flex;
+  width: 260px;
+  height: 100px;
+  background-color: linear-gradient;
+  margin: auto;
+  border-radius: 50px;
+  background: #0270bf;
+  border: 1px solid #222;
+  box-shadow: 0 0 5px 1px #333;
+}
+
+.switch-container.standby {
+  border: 1px solid #2196f3;
+  box-shadow: 0 0 6px 1px #2196f3;
+  margin-top: 5%;
+  margin-left: 32.5%;
+}
+
+.switch-container button {
+  cursor: pointer;
+  transition: 0.3s ease;
+  font-size: 1.1rem;
+  width: 100%;
+  border-radius: 50px;
+  margin: 0.8rem;
+  background: #2dafe3;
+  color: white;
+}
+
+#ON.active {
+  background: #26b170;
+}
+
+#OFF.active {
+  background: #b8021d;
+}
+
+#status {
+  background-color: lightcyan;
+  text-align: center;
+  font-weight: bold;
+}
+
+.dotplace{
+  margin-top: 3%;
+}
+
+.dot {
+  height: 25px;
+  width: 25px;
+  margin-left: 44%;
+  margin-top: 3%;
+  margin-right: 2%;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.dot.active{
+  background-color: red !important;
+  box-shadow: 0 0 150px 40px #b8021d;
+}
+
+.dot.disabled{
+  background-color: green !important;
+  box-shadow: 0 0 150px 40px green;
+}
